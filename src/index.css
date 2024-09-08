@@ -13,9 +13,10 @@
 }
 
 .language {
-    @apply text-lg text-right uppercase cursor-pointer;
+    @apply text-sm sm:text-lg text-right uppercase cursor-pointer;
 }
 
 .textarea {
-    @apply w-full h-48 resize-none bg-[#151515] shadow-md shadow-black rounded-e-lg px-4 py-2 font-righteous font-light leading-5;
+    @apply w-full h-48 max-[392px]:h-44 max-[392px]:text-sm resize-none bg-[#151515] shadow-md shadow-black rounded-e-lg px-4 py-2 font-righteous font-light leading-5;
 }
+
