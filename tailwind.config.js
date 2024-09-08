@@ -15,6 +15,17 @@ export default {
       translate: ["active"],
     },
   },
-  plugins: [],
+  plugins: [
+    function({addUtilities}) {
+      const newUtilities ={
+        '.scrollbar-hide': {
+          '::-webkit-scrollbar': {display: 'none'},
+          '-ms-overflow-style': 'none',
+          'scrollbar-width': 'none',
+        }
+      }
+      addUtilities(newUtilities)
+    }
+  ],
 }
 
